@@ -1,0 +1,21 @@
+{
+  "name": "energia-register",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-request-language": "^1.1.15",
+    "express-validator": "^5.3.1",
+    "gulp": "^4.0.2",
+    "mongoose": "^5.6.0",
+    "pug": "^2.0.3"
+  }
+}
