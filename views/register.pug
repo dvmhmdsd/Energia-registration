@@ -30,22 +30,22 @@ block content
                         //- email
                         label(for="email") Your Email Address
                             span.red * 
-                        input#name(type="text" name="email", placeholder="e.g: example@example.com")
+                        input#email(type="text" name="email", placeholder="e.g: example@example.com")
 
                         //- phone
                         label(for="phone") Your Phone Number
                             span.red * 
-                        input#name(type="tel" name="phone", placeholder="e.g: 01003400000")
+                        input#phone(type="tel" name="phone", placeholder="e.g: 01003400000")
 
                         //- university
                         label(for="university") University
                             span.red * 
-                        input#name(type="text" name="university", placeholder="e.g: Cairo University")
+                        input#university(type="text" name="university", placeholder="e.g: Cairo University")
 
                         //- college
                         label(for="college") College
                             span.red * 
-                        input#name(type="text" name="college", placeholder="e.g: Engineering")
+                        input#college(type="text" name="college", placeholder="e.g: Engineering")
                 
                         //- committee
                         label(for="committee") Choose the committee you want to join
@@ -60,4 +60,4 @@ block content
                         textarea#join-reason(name="reason", cols="30", rows="10", placeholder="e.g: To learn")
 
                         //- submit
-                        button(type="submit") Register
+                        input(type="submit", value="Register")

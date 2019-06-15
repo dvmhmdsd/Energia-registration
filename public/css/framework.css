@@ -64,9 +64,6 @@ textarea {
     display: block;
     width: 100%;
 }
-input.invalid {
-  background-color: #ffdddd;
-}
 
 @media (min-width: 991px) {
     .half {

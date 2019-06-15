@@ -44,6 +44,18 @@
     outline: 0;
 }
 
+input.valid,
+select.valid,
+textarea.valid {
+  border: 3px solid green;
+}
+
+input.invalid,
+select.invalid,
+textarea.invalid {
+  border: 3px solid #bd2424;
+}
+
 .form-card input:focus,
 .form-card select:focus,
 .form-card textarea:focus {
@@ -51,12 +63,22 @@
 }
 
 /* style the submit button */
-.form-card button {
+.form-card input[type="submit"] {
     width: 30%;
     padding: 10px;
     color: #fff;
-    background-color: #0c68ab;
+    background-color: rgba(12, 104, 171, 0.8);
     border: none;
     outline: 0;
     border-radius: 7px;
+    cursor: pointer;
+}
+
+.form-card input[type="submit"]:hover {
+  background-color: rgba(12, 104, 171, 1);;
+}
+
+.form-card input[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
