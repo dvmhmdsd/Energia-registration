@@ -9,7 +9,7 @@ const expressValidator = require("express-validator");
 const config = require("./config/db");
 
 // get the router of registeration
-const register = require('./routers/register');
+const register = require("./routers/register");
 
 // init the app
 const app = express();
@@ -34,12 +34,12 @@ app.use(bodyParser.json());
 // set the public folder
 app.use(express.static(path.join(__dirname, "/public")));
 
-app.get('/', (req, res) => {
-    res.send('Hello, world !')
-})
+app.get("/", (req, res) => {
+  res.render('register');
+});
 
 // set the register router
-app.use('/register', register);
+app.use("/register", register);
 
 // make the port dynamically set
 const PORT = process.env.PORT || 3000;
