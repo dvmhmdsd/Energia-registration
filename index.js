@@ -38,6 +38,19 @@ app.get("/", (req, res) => {
   res.render('register');
 });
 
+// get the member model
+const Member = require('./models/member');
+
+// set the routing of the dashboard
+app.get('/dashboard', (req, res) => {
+  Member.find({}).then((members, err) => {
+    if (err) console.log(err);
+
+    // get the result and render the dashboard
+    res.render('dashboard', {members});
+  })
+})
+
 // set the register router
 app.use("/register", register);
 

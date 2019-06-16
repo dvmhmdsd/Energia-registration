@@ -1,0 +1,36 @@
+extends layout
+block content
+
+    .table
+        if members.length > 0
+            table
+                thead
+                    tr 
+                        td Name
+                        td Email
+                        td Phone
+                        td University
+                        td College
+                        td Committee
+                        td Reason to join
+                tbody
+                    each member in members
+                        tr
+                            td 
+                                span #{member.fname} #{member.lname}
+                            td 
+                                span #{member.email}
+                            td 
+                                span #{member.phone}
+                            td 
+                                span #{member.university}
+                            td 
+                                span #{member.college}
+                            td 
+                                span #{member.committee}
+                            td 
+                                span #{member.reason}
+        else
+            p(style="padding: 40px;") No members registered yet.
+
+    script(src="/js/dashScript.js", defer)

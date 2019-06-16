@@ -13,9 +13,9 @@ formFields.forEach(field => {
 
 // select the form
 let error = 1;
-let form = document.getElementById("regForm");
+let regForm = document.querySelector("#regForm");
 
-form.addEventListener("submit", function(e) {
+regForm.addEventListener("submit", function(e) {
   let sub_form = {};
   //   validate the fields
   formFields.forEach(field => {
@@ -35,6 +35,9 @@ form.addEventListener("submit", function(e) {
   if (error > 0) {
     // prevent the submition if there's errors
     e.preventDefault();
+    formFields.forEach(field => {
+      validate(field);
+    });
   } else {
     // send te data otherwise
     e.preventDefault();
@@ -80,6 +83,5 @@ function validate(field) {
     field.classList.remove("valid");
 
     error += 1;
-    return false;
   }
 }

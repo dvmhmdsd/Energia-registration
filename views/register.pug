@@ -2,8 +2,6 @@ extends layout
 block content
 
         header.reg-header.text-center
-            //- logo
-            img(src="/assets/logo.png", alt="energia logo")
 
             //- caption
             p.header-caption 
@@ -14,7 +12,7 @@ block content
             //- form card
             section.form-card
                 form#regForm
-                    h1.text-center Register
+                    h1.text-center.card-head Register
                     // One "tab" for each step in the form:
                     section.form-fields
                         //- name
@@ -68,3 +66,6 @@ block content
             .modal-content
                 .modal-body
                     img(src="/assets/loader.gif", alt="loading ...")
+
+
+        script(src="/js/main.js", defer)

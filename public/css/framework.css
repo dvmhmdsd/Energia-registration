@@ -18,6 +18,7 @@ body {
   color: #fff;
   font-size: 15px;
   padding: 20px;
+  overflow-x: hidden;
 }
 
 /* centering the content */
@@ -74,3 +75,4 @@ textarea {
         margin-right: 1%;
     }
 }
+
