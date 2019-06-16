@@ -17,14 +17,20 @@ router.post("/", (req, res) => {
   } = req.body;
 
   // make inistance from the member model
-  let member = new Member({ fname });
+  let member = new Member({ fname,
+    lname,
+    email,
+    phone,
+    university,
+    college,
+    committee,
+    reason });
 
   // save to database
-  member.save().then(res => {
-    console.log("sent", res);
+  member.save().then(response => {
+    res.sendStatus(200);
   });
 
-  console.log(req.body)
 });
 
 // export the router

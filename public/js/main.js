@@ -64,7 +64,7 @@ form.addEventListener("submit", function(e) {
       // show success message
       modalContent.innerHTML = '<p>Data have been sent, we will contact you soon.</p>'
     }).catch(err => {
-      console.log(err);
+      modalContent.innerHTML = '<p>An error occured, please try again.</p>'
     })
   }
 });

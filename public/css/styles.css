@@ -117,7 +117,18 @@ textarea.invalid {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal-body {
   padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body img {
+  max-width: 32%;
+  height: auto;
 }
 
 /* Add Animation */
