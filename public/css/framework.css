@@ -4,7 +4,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: monospace
+  font-family: monospace;
 }
 
 * {
@@ -76,3 +76,8 @@ textarea {
     }
 }
 
+/* Making the placeholders lighter */
+*::placeholder {
+  color: #cccccc;
+  font-family: monospace;
+}

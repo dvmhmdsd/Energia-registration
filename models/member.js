@@ -7,7 +7,7 @@ let MemberSchema = new mongoose.Schema({
   email: String,
   phone: String,
   university: String,
-  college: String,
+  faculty: String,
   committee: String,
   reason: String,
 });

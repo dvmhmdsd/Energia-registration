@@ -72,6 +72,7 @@ regForm.addEventListener("submit", function(e) {
   }
 });
 
+//We may like to add some functionality to the validation
 function validate(field) {
   if (field.value.length > 0) {
     field.classList.add("valid");
