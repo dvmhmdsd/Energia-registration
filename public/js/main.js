@@ -11,8 +11,10 @@ formFields.forEach(field => {
   });
 });
 
-// select the form
+// catch the errors of validation
 let error = 1;
+
+// select the form
 let regForm = document.querySelector("#regForm");
 
 regForm.addEventListener("submit", function(e) {
@@ -77,7 +79,9 @@ function validate(field) {
     field.classList.add("valid");
     field.classList.remove("invalid");
 
-    error -= 1;
+    if (error > 0) {
+      error -= 1;
+    }
   } else {
     field.classList.add("invalid");
     field.classList.remove("valid");
