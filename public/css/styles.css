@@ -275,7 +275,7 @@ only screen and (max-width: 760px),
 	td:nth-of-type(2):before { content: "Email"; }
 	td:nth-of-type(3):before { content: "Phone"; }
 	td:nth-of-type(4):before { content: "University"; }
-	td:nth-of-type(5):before { content: "College"; }
+	td:nth-of-type(5):before { content: "Faculty"; }
 	td:nth-of-type(6):before { content: "Committee"; }
 	td:nth-of-type(7):before { content: "Reason to join"; }
 }

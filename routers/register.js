@@ -11,7 +11,7 @@ router.post("/", (req, res) => {
     email,
     phone,
     university,
-    college,
+    faculty,
     committee,
     reason
   } = req.body;
@@ -22,7 +22,7 @@ router.post("/", (req, res) => {
     email,
     phone,
     university,
-    college,
+    faculty,
     committee,
     reason });
 
