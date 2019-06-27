@@ -78,6 +78,6 @@ textarea {
 
 /* Making the placeholders lighter */
 *::placeholder {
-  color: #cccccc;
+  color: #aaaaaa;
   font-family: monospace;
 }
