@@ -279,9 +279,3 @@ only screen and (max-width: 760px),
 	td:nth-of-type(6):before { content: "Committee"; }
 	td:nth-of-type(7):before { content: "Reason to join"; }
 }
-
-/* Making the placeholders lighter */
-*::placeholder {
-  color: #cccccc;
-  font-family: monospace;
-} 
